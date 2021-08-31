@@ -6,3 +6,5 @@ kg.itschool.demo.dao.PassengerDAO=org.springframework.stereotype.Component
 kg.itschool.demo.dao.PlaneDAO=org.springframework.stereotype.Component
 kg.itschool.demo.dao.impl.PassengerDAOImpl=org.springframework.stereotype.Component
 kg.itschool.demo.dao.impl.PlaneDAOImpl=org.springframework.stereotype.Component
+kg.itschool.demo.entity.Passenger=javax.persistence.Entity,javax.persistence.Table
+kg.itschool.demo.entity.Plane=javax.persistence.Entity,javax.persistence.Table

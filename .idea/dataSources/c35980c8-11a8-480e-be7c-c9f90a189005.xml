@@ -3,14 +3,6 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.23">
     <root id="1">
       <ServerVersion>13.4</ServerVersion>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-13441||-9223372036854775808|c|G
-13441||10|c|G
-13441||10|C|G
-13441||10|T|G</Grants>
       <DateStyle>mdy</DateStyle>
       <TimeZones>true ACDT
 true ACSST
@@ -792,7 +784,7 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <IntrospectionStateNumber>536</IntrospectionStateNumber>
+      <IntrospectionStateNumber>551</IntrospectionStateNumber>
       <StartupTime>1630291022</StartupTime>
     </root>
     <database id="2" parent="1" name="postgres">
@@ -809,12 +801,8 @@ false Zulu
 13158||-9223372036854775808|U|G
 13158||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>537</IntrospectionStateNumber>
+      <IntrospectionStateNumber>552</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|16418|16420|1
-sequence|table|16428|16430|1
-sequence|table|16438|16440|1
-</Relations>
     </database>
     <role id="3" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
@@ -878,7 +866,7 @@ sequence|table|16438|16440|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>537</IntrospectionStateNumber>
+      <IntrospectionStateNumber>552</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="17" parent="2" name="adminpack">
@@ -987,170 +975,5 @@ sequence|table|16438|16440|1
       <Handler>pg_catalog.spghandler</Handler>
       <HandlerId>334</HandlerId>
     </access-method>
-    <sequence id="30" parent="16" name="person_person_id_seq">
-      <ObjectId>16438</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>531</StateNumber>
-      <DataType>bigint|0s</DataType>
-    </sequence>
-    <sequence id="31" parent="16" name="planes_plane_id_seq">
-      <ObjectId>16418</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>527</StateNumber>
-      <DataType>bigint|0s</DataType>
-    </sequence>
-    <sequence id="32" parent="16" name="tb_passengers_id_seq">
-      <ObjectId>16428</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>528</StateNumber>
-      <DataType>bigint|0s</DataType>
-    </sequence>
-    <table id="33" parent="16" name="person">
-      <ObjectId>16440</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>531</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-    </table>
-    <table id="34" parent="16" name="planes">
-      <ObjectId>16420</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>527</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-    </table>
-    <table id="35" parent="16" name="tb_passengers">
-      <ObjectId>16430</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>528</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-    </table>
-    <column id="36" parent="33" name="person_id">
-      <Position>1</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>531</StateNumber>
-      <TypeId>20</TypeId>
-      <IdentityKind>by-default</IdentityKind>
-    </column>
-    <column id="37" parent="33" name="age">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>531</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="38" parent="33" name="first_name">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>531</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="39" parent="33" name="last_name">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>531</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="40" parent="33" name="person_pkey">
-      <ObjectId>16446</ObjectId>
-      <StateNumber>531</StateNumber>
-      <ColNames>person_id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <CollationIds>0</CollationIds>
-      <ClassIds>3124</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="41" parent="33" name="person_pkey">
-      <ObjectId>16447</ObjectId>
-      <StateNumber>531</StateNumber>
-      <ColNames>person_id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>person_pkey</UnderlyingIndexName>
-    </key>
-    <column id="42" parent="34" name="plane_id">
-      <Position>1</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>527</StateNumber>
-      <TypeId>20</TypeId>
-      <IdentityKind>by-default</IdentityKind>
-    </column>
-    <column id="43" parent="34" name="company">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>527</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="44" parent="34" name="model">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>527</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="45" parent="34" name="seats">
-      <Position>4</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>527</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="46" parent="34" name="planes_pkey">
-      <ObjectId>16426</ObjectId>
-      <StateNumber>527</StateNumber>
-      <ColNames>plane_id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <CollationIds>0</CollationIds>
-      <ClassIds>3124</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="47" parent="34" name="planes_pkey">
-      <ObjectId>16427</ObjectId>
-      <StateNumber>527</StateNumber>
-      <ColNames>plane_id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>planes_pkey</UnderlyingIndexName>
-    </key>
-    <column id="48" parent="35" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>528</StateNumber>
-      <TypeId>20</TypeId>
-      <IdentityKind>by-default</IdentityKind>
-    </column>
-    <column id="49" parent="35" name="email">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>528</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="50" parent="35" name="full_name">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>528</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="51" parent="35" name="gender">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>528</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="52" parent="35" name="tb_passengers_pkey">
-      <ObjectId>16436</ObjectId>
-      <StateNumber>528</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <CollationIds>0</CollationIds>
-      <ClassIds>3124</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="53" parent="35" name="tb_passengers_pkey">
-      <ObjectId>16437</ObjectId>
-      <StateNumber>528</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>tb_passengers_pkey</UnderlyingIndexName>
-    </key>
   </database-model>
 </dataSource>
