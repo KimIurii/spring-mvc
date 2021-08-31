@@ -1,0 +1,8 @@
+kg.itschool.demo.controller.GreetingController=org.springframework.stereotype.Component
+kg.itschool.demo.controller.MainController=org.springframework.stereotype.Component
+kg.itschool.demo.controller.PassengerController=org.springframework.stereotype.Component
+kg.itschool.demo.controller.PlaneController=org.springframework.stereotype.Component
+kg.itschool.demo.dao.PassengerDAO=org.springframework.stereotype.Component
+kg.itschool.demo.dao.PlaneDAO=org.springframework.stereotype.Component
+kg.itschool.demo.dao.impl.PassengerDAOImpl=org.springframework.stereotype.Component
+kg.itschool.demo.dao.impl.PlaneDAOImpl=org.springframework.stereotype.Component

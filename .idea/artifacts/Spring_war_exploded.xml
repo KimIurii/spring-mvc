@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-aop-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-aspects-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-beans-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-context-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-context-indexer-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-context-support-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-core-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-expression-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-instrument-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-jcl-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-jdbc-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-jms-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-messaging-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-orm-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-oxm-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-test-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-tx-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-web-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-webflux-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-webmvc-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/spring-websocket-5.2.9.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../commons-logging-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../javax.servlet.jsp.jstl-1.2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../javax.servlet.jsp.jstl-api-1.2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/Telegram Desktop/lombok.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/Telegram Desktop/spring-demo/spring-demo/out/artifacts/spring_demo_war_exploded/WEB-INF/lib/postgresql-42.2.23.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Spring/web/Web" />
+    </root>
+  </artifact>
+</component>

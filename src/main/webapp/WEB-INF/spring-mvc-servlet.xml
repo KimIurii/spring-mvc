@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+    <!-- Step three configure path to scan for beans -->
+
+    <context:component-scan base-package="kg.itschool.demo"/>
+
+    <!-- Step four add support for validation, conversion, formatting -->
+
+    <mvc:annotation-driven/>
+
+    <!-- Step five add Spring MVC view class -->
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property value="/view/" name="prefix"/>
+    <property value=".jsp" name="suffix"/>
+
+</bean>
+
+</beans>
