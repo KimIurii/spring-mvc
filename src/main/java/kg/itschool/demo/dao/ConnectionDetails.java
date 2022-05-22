@@ -7,8 +7,8 @@ import java.sql.Driver;
 
 public interface ConnectionDetails {
 
-    String PASSWORD = "woshiyouli10";
-    String USERNAME = "postgres";
+    String PASSWORD = "admin";
+    String USERNAME = "admin";
     String URl = "jdbc:postgresql://localhost:5432/postgres";
 
     static Connection getConnection() throws SQLException {
